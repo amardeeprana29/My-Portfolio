@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+html body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background-image: linear-gradient(to bottom right, #1e120b, #4b2e20, #7e4a35);
+}
+
+/* Navigation bar Start */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#2b1b12;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a{
+    font-family:'Roboto', sans-serif;
+    height: 40px;
+    line-height: 45px;
+    margin: 3px;
+    padding: 0px 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #f5f5dc;
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 2px;
+    display: flex;
+}
+
+nav ul li a:hover{
+    box-shadow: 0 4px 8px rgba(126, 74, 53, 0.5);  /* soft cocoa shadow */
+    border-bottom: 2px solid #e0c097;  /* soft gold */
+    transition: all 0.3s ease;
+    text-shadow: 0 0 5px rgba(224, 192, 151, 0.6);  /* subtle gold glow */
+}
+
+/*
+.active{
+    box-shadow: 0 4px 8px rgba(126, 74, 53, 0.5);  
+    border-bottom: 2px solid #e0c097;  
+    transition: all 0.3s ease;
+    text-shadow: 0 0 5px rgba(224, 192, 151, 0.6);  
+}
+*/
+
+/* Navigation bar End */
+
+/* Content Start*/
+
+/*Hero section: image and Intro start*/
+#hero-section{
+    margin-top: 150px;
+    width: 100%;
+    height: 600px;
+    background-image: url('image/background-image.jpg');
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: relative;
+}
+
+#hero-section-heading{
+    width: 900px;
+    position: absolute;
+    right: 300px;
+    top: 5%;
+}
+
+#hero-section-heading h2{
+    font-size: 70px;
+    margin: 0;
+    letter-spacing: 3px;
+    color: #f5f5dc;
+}
+
+#hero-section-heading h2 span{
+    color: #e0c097;
+    font-weight: bold;
+}
+
+#hero-section-heading h3{
+    text-decoration: none;
+    color: #f5f5dc;
+    font-size: 30px;
+}
+
+#hero-section-heading p{
+    color: #f5f5dc;
+    font-size: 18px;
+}
+
+.custom-btn{
+    width: 120px;
+    height: 35px;
+    display: flex;
+    background-color: #e0c097;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(126, 74, 53, 0.5);
+    border-radius: 20px;
+    color: #4e5145;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+    font-weight: bold;
+}
+
+.custom-btn:hover{
+    background-color:#eeeecc ;
+}
+/*Hero section: image and Intro End*/
+
+/*About section start*/
+
+#about-section{
+    width: 1560;
+    height: 750px;
+    background-image: linear-gradient(to bottom, #2b1b12, #3f2a1f, #5c3e30);
+    display: flex;
+    box-sizing: border-box;
+    padding-top: 100px;
+    padding-right: 120px;
+    padding-left: 110px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    position: relative;
+}
+
+/*
+#about-image img{
+    width: 600px;
+    box-shadow: 0 4px 8px rgba(126, 74, 53, 0.5);
+}
+*/
+#about-text{
+    width: 95%;
+    color: #f5f5dc;    
+}
+
+#about-text h2{
+    font-size: 70px;
+    font-weight: bold;
+}
+#about-text h2 span{
+    color: #e0c097;
+}
+
+#about-text h3{
+    font-size: 35px;
+    color: #e0c097;
+}
+
+#about-text p{
+    font-size: 18px;
+}
+
+/*About section End*/
+
+/* Project Section Start */
+
+#project-section{
+
+}
+
+/* Project Section End */
+
+/*Content End*/
