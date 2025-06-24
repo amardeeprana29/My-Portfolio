@@ -419,3 +419,102 @@ input:focus, textarea:focus {
 
 /*Contact Section End*/
 
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    #hero-section {
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        padding: 20px;
+    }
+
+    #hero-section-heading {
+        width: 90%;
+        position: static;
+        margin: auto;
+    }
+
+    #hero-section-heading h2 {
+        font-size: 40px;
+    }
+
+    #hero-section-heading h3 {
+        font-size: 20px;
+    }
+
+    #hero-section-heading p {
+        font-size: 16px;
+    }
+
+    #about-section {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        padding: 30px 20px;
+    }
+
+    #about-text h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #about-text h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #about-text p {
+        font-size: 15px;
+        text-align: justify;
+    }
+
+    #project-section {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    #project-content {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .project-box {
+        width: 90%;
+        height: auto;
+    }
+
+    #contact-section {
+        width: 100%;
+        padding: 30px 10px;
+    }
+
+    #contact-section form {
+        width: 100%;
+    }
+
+    #contact-section form input,
+    #contact-section form textarea {
+        width: 90%;
+    }
+
+    .contact-info {
+        font-size: 14px;
+    }
+
+    .contact-social a {
+        font-size: 24px;
+    }
+}
