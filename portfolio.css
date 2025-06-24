@@ -123,6 +123,9 @@ nav ul li a:hover{
 
 .custom-btn:hover{
     background-color:#eeeecc ;
+    transform: scale(1.03);
+    box-shadow: 12px 12px 16px rgba(160, 100, 60, 0.6);
+    transition: 0.3s ease;
 }
 /*Hero section: image and Intro End*/
 
@@ -130,7 +133,7 @@ nav ul li a:hover{
 
 #about-section{
     width: 1560;
-    height: 750px;
+    height: 770px;
     background-image: linear-gradient(to bottom, #2b1b12, #3f2a1f, #5c3e30);
     display: flex;
     box-sizing: border-box;
@@ -175,9 +178,94 @@ nav ul li a:hover{
 /* Project Section Start */
 
 #project-section{
-
+    width: 1670px;
+    height: 750px;
+    background-image: linear-gradient(to top right, #3f2a1f, #6b4636, #8e5c47);
+    display: flex;
+    padding: 50px 0px 0px 0px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
+#project-heading h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #e0c097;
+}
+
+#project-heading p{
+    text-align: center;
+    color: #f5f5dc;
+    font-size: 18px;
+}
+
+#project-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-box{
+    width: 400px;
+    height: 500px;
+    background-color: #e0c097;
+    margin: 20px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 8px 8px 8px rgba(160, 100, 60, 0.6);
+}
+
+.project-box:hover {
+    transform: scale(1.03);
+    box-shadow: 12px 12px 16px rgba(160, 100, 60, 0.6);
+    transition: 0.3s ease;
+}
+
+.project-img{
+    width: 100%;
+    height: 45%;
+}
+
+.project-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+    border: 2px solid #f5f5dc;;
+}
+
+.project-details{
+    width: 100%;
+    height: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(to top right, #3f2a1f, #6b4636, #8e5c47);
+}
+
+.project-details h4{
+    font-size: 17.5px;
+    color: #e0c097;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.project-details p{
+    text-align: center;
+    color: #f5f5dc;
+    font-size: 16px;
+}
+
+.project-button{
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
 /* Project Section End */
 
 /*Content End*/
