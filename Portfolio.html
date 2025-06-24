@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="portfolio.css">
+
+    <!-- this for social icons to work -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <!--Navigation bar Start-->
@@ -14,9 +17,10 @@
                 <li><a href=" " >Home</a></li> <!-- class="active" : Add this if want active hover-->  
                 <li><a href="#about-section">About</a></li>
                 <li><a href="#project-section">Project</a></li>
+                <li><a href="">Internship</a></li>
                 <li><a href="">Skills</a></li>
                 <li><a href="">Certificate</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#contact-section">Contact</a></li>
             </ul>
 
         </nav>
@@ -36,7 +40,7 @@
                 One of my key projects includes a <strong>Crowd-Sourced Disaster Management System</strong> designed to improve disaster response using real-time data and interactive UI features.<br><br>
                 I'm also familiar with tools like Git, GitHub, Firebase, and have a good grasp of Object-Oriented Programming and Data Structures. I focus on delivering quality work with attention to detail and continuous learning.
             </p>
-            <a class="custom-btn" href="">Contact</a>
+            <a class="custom-btn" href="#contact-section">Contact</a>
         </div>
     </section>
 `<!--Hero section: image and Intro End-->
@@ -60,7 +64,7 @@
             <p>
                 I'm a focused learner, passionate about improving my skills and contributing to meaningful web solutions. I'm also an NCC 'C' Certificate holder, which has helped me build discipline, leadership, and a strong sense of teamwork — qualities I bring into every project I work on.
             </p>
-            <a class="custom-btn" href="">Contact</a>
+            <a class="custom-btn" href="">Resume</a>
         </div>
     </section>
 <!--About section End-->    
@@ -127,11 +131,70 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
 <!--Project Section End-->
+
+<!-- Internship section start-->
+
+<!-- Internship section End-->
+
+<!-- Skill Section start-->
+
+<!-- Skill Section End-->
+
+<!-- Certificate section start-->
+
+<!-- Certificate section End-->
+
+<!-- Contact Section Start -->
+
+    <section id="contact-section">
+        <div id="contact-heading">
+            <h1>Contact Me</h1>
+            <p>
+                Feel free to reach out for collaborations, freelance opportunities, or any queries regarding my work.
+            </p>
+        </div>
+
+        <form action="https://formspree.io/f/mdkzwqwz" method="POST">
+            <input type="hidden" name="_redirect" value="https://formspree.io/success">
+
+            <input type="text" name="username" autocomplete="name" placeholder="Type Your Name" required>
+            <input type="email" name="email" autocomplete="email" placeholder="Type your E-Mail" required>
+            <textarea name="message" placeholder="Type Your Message..." required></textarea>
+            
+            <input type="submit" value="Send">
+        </form>
+        <!-- Social Icons Start -->
+        <div class="contact-social">
+            <a href="https://github.com/Amardeeprana29" target="_blank" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/amardeeprana29/" target="_blank" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://leetcode.com/u/amardeeprana29/" target="_blank" aria-label="LeetCode">
+                <i class="fa-solid fa-code"></i>
+            </a>
+            <a href="https://www.instagram.com/_rajan__rana/" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+            
+        <div class="contact-info">
+            <p><i class="fa-solid fa-envelope"></i> 
+                <a href="mailto:amardeeprana2905@gmail.com">amardeeprana2905@gmail.com</a>
+            </p>
+            <!--<p><i class="fa-solid fa-phone"></i> 
+                <a href="tel:+919031950845" >+91 9031950845</a>
+            </p>-->
+        </div>
+        <!-- Social Icons End -->
+    </section>
+
+<!-- Contact Section End -->
 
     <!-- Content End-->
 </body>
