@@ -1,13 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-* {
-    box-sizing: border-box;
-}
-
-body {
-    overflow-x: hidden;
-}
 html{
     scroll-behavior: smooth;
 }
@@ -80,8 +73,7 @@ nav ul li a:hover{
 /*Hero section: image and Intro start*/
 #hero-section{
     margin-top: 150px;
-    width: 100%;
-    max-width: 1670px;  /* Optional to maintain layout limits */
+    width: 1670px;  
     height: 600px;
     background-image: url('image/background-image.jpg');
     background-repeat: no-repeat;
@@ -90,8 +82,7 @@ nav ul li a:hover{
 }
 
 #hero-section-heading{
-    width: 100%;
-    max-width: 900px;
+    width: 900px;
     position: absolute;
     right: 300px;
     top: 5%;
@@ -147,8 +138,7 @@ nav ul li a:hover{
 /*About section start*/
 
 #about-section{
-    width: 100%;
-    max-width: 1670px;  /* Optional to maintain layout limits */
+    width: 1670px;
     height: 770px;
     background-image: linear-gradient(to bottom, #2b1b12, #3f2a1f, #5c3e30);
     display: flex;
@@ -194,8 +184,7 @@ nav ul li a:hover{
 /* Project Section Start */
 
 #project-section{
-    width: 100%;
-    max-width: 1670px;  /* Optional to maintain layout limits */
+    width: 1670px;
     height: 770px;
     background-image: linear-gradient(to top right, #3f2a1f, #6b4636, #8e5c47);
     display: flex;
@@ -308,8 +297,7 @@ nav ul li a:hover{
 /* Contact Section Start */
 
 #contact-section{
-    width: 100%;
-    max-width: 1670px;  /* Optional to maintain layout limits */
+    width: 1670px;
     background-image: linear-gradient(to top right, #4a372e, #71594a, #a38a78);
     display: flex;
     padding: 50px 0px 40px 0px;
@@ -431,31 +419,3 @@ input:focus, textarea:focus {
 
 /*Contact Section End*/
 
-
-/* Mobile Responsive: max-width 768px */
-@media (max-width: 768px) {
-nav ul {
-    flex-direction: column;
-    gap: 10px;
-}
-
-#hero-section-heading {
-    padding: 0 20px;
-    position: static;
-    text-align: center;
-}
-
-#project-content {
-    flex-direction: column;
-}
-
-.project-box {
-    width: 90%;
-    height: auto;
-}
-
-#contact-section form input,
-#contact-section form textarea {
-    width: 90%;
-}
-}
