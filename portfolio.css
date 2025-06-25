@@ -431,12 +431,83 @@ nav ul li a:hover{
 
 /* Skill Section End */
 
+
 /* Certificate section start */
 
+#certificate-section {
+    width: 100%;
+    height: 770px;
+    padding: 60px 80px;
+    background-image: linear-gradient(to top right, #3f2a1f, #5c3e30, #7e5a47);
+    color: #f5f5dc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#certificate-heading h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #e0c097;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#certificate-heading p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #f5f5dc;
+}
+
+.certificate-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.certificate-box {
+    background-color: #2b1b12;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.certificate-box:hover {
+    transform: translateY(-8px);
+}
+
+.certificate-logo img {
+    width: 60px;
+    margin-bottom: 15px;
+}
+
+.certificate-box h3 {
+    color: #e0c097;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.certificate-box p {
+    font-size: 16px;
+    color: #f5f5dc;
+    margin-bottom: 15px;
+}
+
+.certificate-button{
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    justify-content: center;
+}
+
 /* Certificate section End */
-
-/* Contact Section Start */
-
 
 /*Content End*/
 
