@@ -325,16 +325,16 @@ nav ul li a:hover{
     transform: translateY(-8px);
 }
 
-.internship-logo {
+/*.internship-logo {
     display: flex;
-    justify-content: center;  /* center the image horizontally */
+    justify-content: center;  
     margin-bottom: 10px;
 }
 
 .internship-logo img {
     width: 60px;
     height: auto;
-}
+}*/
 .internship-box h3 {
     color: #e0c097;
     font-size: 22px;
