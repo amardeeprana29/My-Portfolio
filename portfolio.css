@@ -280,7 +280,6 @@ nav ul li a:hover{
 
 #internship-section {
     width: 100%;
-    height: 770px;
     padding: 60px 80px;
     background-image: linear-gradient(to top right, #3f2a1f, #5c3e30, #7e5a47);
     color: #f5f5dc;
@@ -353,7 +352,6 @@ nav ul li a:hover{
 
 #skills-section {
     width: 100%;
-    height: 770px;
     padding: 60px 80px;
     background-image: linear-gradient(to top right, #3f2a1f, #5c3e30, #7e5a47);
     color: #f5f5dc;
@@ -419,15 +417,6 @@ nav ul li a:hover{
     color: #f5f5dc;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-/*
-@media (max-width: 768px) {
-    #skills-section {
-        padding: 40px 20px;
-    }
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-}*/
 
 /* Skill Section End */
 
@@ -436,7 +425,6 @@ nav ul li a:hover{
 
 #certificate-section {
     width: 100%;
-    height: 770px;
     padding: 60px 80px;
     background-image: linear-gradient(to top right, #3f2a1f, #5c3e30, #7e5a47);
     color: #f5f5dc;
@@ -518,7 +506,7 @@ nav ul li a:hover{
     width: 100%;
     background-image: linear-gradient(to top right, #4a372e, #71594a, #a38a78);
     display: flex;
-    padding: 50px 0px 40px 0px;
+    padding: 60px 80px;
     box-sizing: border-box;
     align-items: center;
     justify-content: center;
@@ -637,3 +625,37 @@ input:focus, textarea:focus {
 
 /*Contact Section End*/
 
+/* ✅ Responsive Fixes for Internship, Skills, Certificate */
+
+@media (max-width: 768px) {
+    #internship-section,
+    #skills-section,
+    #certificate-section {
+        padding: 40px 20px;
+        height: auto; /* Allow it to grow as needed */
+    }
+
+    .internship-grid,
+    .skills-grid,
+    .certificate-grid {
+        grid-template-columns: 1fr; /* Single column on small screens */
+    }
+
+    .internship-box,
+    .skill-category,
+    .certificate-box {
+        padding: 20px;
+    }
+
+    #skills-heading h1,
+    #certificate-heading h1,
+    #internship-heading h1 {
+        font-size: 28px;
+    }
+
+    #skills-heading p,
+    #certificate-heading p,
+    #internship-heading p {
+        font-size: 16px;
+    }
+}
