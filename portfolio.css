@@ -185,10 +185,9 @@ nav ul li a:hover{
 
 #project-section{
     width: 100%;
-    height: 770px;
+    padding: 60px 80px;
     background-image: linear-gradient(to top right, #3f2a1f, #6b4636, #8e5c47);
     display: flex;
-    padding: 50px 0px 0px 0px;
     box-sizing: border-box;
     align-items: center;
     justify-content: center;
@@ -209,9 +208,11 @@ nav ul li a:hover{
 }
 
 #project-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 15px;
+    width: 100%;
+    max-width: 1100px;
 }
 
 .project-box{
