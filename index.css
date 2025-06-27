@@ -78,15 +78,13 @@ nav ul li a:hover{
     min-height: 600px;
     background-image: url('image/background-image.jpg');
     background-repeat: no-repeat;
-    background-size: 525px;
+    background-size: 520px;
     background-position: top left;
     display: flex;
     align-items: center;
     justify-content:flex-end; /* send text to right */
     padding: 60px 80px;
     box-sizing: border-box;
-    background-attachment: scroll;
-    
 }
 
 #hero-section-heading{
@@ -95,7 +93,6 @@ nav ul li a:hover{
     color: #f5f5dc;
     text-align: left;
     padding-right: 100px;
-    z-index: 1;
 }
 
 #hero-section-heading h2{
@@ -636,65 +633,216 @@ input:focus, textarea:focus {
 
 /*Contact Section End*/
 
-/* ✅ Responsive Fixes for Internship, Skills, Certificate */
 
-@media (max-width: 768px) {
-    #internship-section,
-    #skills-section,
-    #certificate-section {
-        padding: 40px 20px;
-        height: auto; /* Allow it to grow as needed */
+/*Toggle section*/
+
+.toggle-btn {
+    display: none;
+}
+.toggle-btn img{
+    width: 25%;
+}
+
+/*
+@media screen and (max-width: 600px) {
+
+    .toggle-btn-visible {display: block;}
+    .toggle-target-hidden {display: none;}
+    .toggle-target-expanded {display: block;}
+    .toggle-btn{
+        text-align: right;
+    }
+}*/
+
+/* ✅ FULL MOBILE RESPONSIVE MEDIA QUERY FOR YOUR PORTFOLIO */
+
+@media screen and (max-width: 768px) {
+  /* Navigation Bar */
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .toggle-btn {
+    display: block;
+    cursor: pointer;
+  }
+
+  .toggle-btn img {
+    width: 35px;
+    height: auto;
+    margin: 12px;
+  }
+
+  .toggle-btn-visible {display: block;}
+    .toggle-target-hidden {display: none;}
+    .toggle-target-expanded {display: block;}
+    .toggle-btn{
+        text-align: right;
     }
 
-    .internship-grid,
-    .skills-grid,
-    .certificate-grid {
-        grid-template-columns: 1fr; /* Single column on small screens */
-    }
+  nav ul.menu {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #2b1b12;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 10px 20px;
+    gap: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+  }
 
-    .internship-box,
-    .skill-category,
-    .certificate-box {
-        padding: 20px;
-    }
+  nav ul.menu li {
+    width: 100%;
+  }
 
-    #skills-heading h1,
-    #certificate-heading h1,
-    #internship-heading h1 {
-        font-size: 28px;
-    }
+  nav ul.menu li a {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
 
-    #skills-heading p,
-    #certificate-heading p,
-    #internship-heading p {
-        font-size: 16px;
-    }
+  /* Hero Section */
+  #hero-section {
+    flex-direction: column;
+    align-items: flex-start;
+    background-size: 300px;
+    padding: 40px 20px;
+  }
 
-    #hero-section {
-        flex-direction: column;
-        align-items: center;
-        background-position: top center;
-        background-size: contain; /* makes image fully visible */
-        padding: 200px 20px 40px 20px; /* adds space at top for image */
-        min-height: auto;
-    }
+  #hero-section-heading {
+    padding-right: 0;
+  }
 
-    #hero-section-heading {
-        padding-right: 0;
-        text-align: center;
-        max-width: 100%;
-        background-color: transparent;
-    }
+  #hero-section-heading h2 {
+    font-size: 40px;
+  }
 
-    #hero-section-heading h2 {
-        font-size: 36px;
-    }
+  #hero-section-heading h3 {
+    font-size: 24px;
+  }
 
-    #hero-section-heading h3 {
-        font-size: 22px;
-    }
+  #hero-section-heading p {
+    font-size: 16px;
+  }
 
-    #hero-section-heading p {
-        font-size: 16px;
-    }
+  /* About Section */
+  #about-section {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  #about-text h2 {
+    font-size: 36px;
+  }
+
+  #about-text h3 {
+    font-size: 22px;
+  }
+
+  #about-text p {
+    font-size: 16px;
+  }
+
+  /* Project Section */
+  #project-section {
+    padding: 40px 20px;
+  }
+
+  #project-heading h1 {
+    font-size: 28px;
+  }
+
+  #project-heading p {
+    font-size: 16px;
+  }
+
+  .project-box {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-img {
+    height: 200px;
+  }
+
+  .project-details p {
+    font-size: 15px;
+  }
+
+  .project-button {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Internship, Skills, Certificate Sections */
+  #internship-section,
+  #skills-section,
+  #certificate-section {
+    padding: 40px 20px;
+  }
+
+  .internship-grid,
+  .skills-grid,
+  .certificate-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .internship-box,
+  .skill-category,
+  .certificate-box {
+    padding: 20px;
+  }
+
+  #internship-heading h1,
+  #skills-heading h1,
+  #certificate-heading h1 {
+    font-size: 28px;
+  }
+
+  #internship-heading p,
+  #skills-heading p,
+  #certificate-heading p {
+    font-size: 16px;
+  }
+
+  /* Contact Section */
+  #contact-section {
+    padding: 40px 20px;
+  }
+
+  #contact-heading h1 {
+    font-size: 28px;
+  }
+
+  #contact-heading p {
+    font-size: 16px;
+  }
+
+  #contact-section form {
+    width: 100%;
+  }
+
+  #contact-section form input,
+  #contact-section form textarea {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  #contact-section form input[type="submit"] {
+    width: 100%;
+  }
+
+  .contact-social {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .contact-info {
+    font-size: 15px;
+  }
 }

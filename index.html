@@ -8,12 +8,22 @@
 
     <!-- this for social icons to work -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Toggle section-->
+    <script src="jquery.min.js"></script>
+    <!-- jquery download from google-->
+    <script src="toggleSection.js"></script>
+
 </head>
 <body>
     <!--Navigation bar Start-->
     <section class="header" >
         <nav>
-            <ul class="menu">  
+            <!-- Toggle Button for Mobile -->
+            <span data-toggle-target="#menu" class="toggle-btn"> <!--Menu-->
+                <img src="image/menu.png" alt="">
+            </span>
+            <ul class="menu" id="menu">  
                 <li><a href=" " >Home</a></li> <!-- class="active" : Add this if want active hover-->  
                 <li><a href="#about-section">About</a></li>
                 <li><a href="#project-section">Project</a></li>
