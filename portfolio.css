@@ -780,7 +780,7 @@ input:focus, textarea:focus {
     }
 
     .project-box {
-        width: 100%;
+        width: 360px;
         height: auto;
     }
 
@@ -822,9 +822,15 @@ input:focus, textarea:focus {
         padding: 20px;
     }
 
-    .internship-box,
-    .skill-category,
     .certificate-box:hover {
+        transform: translateY(-8px);
+    }
+
+    .internship-box:hover  {
+        transform: translateY(-8px);
+    }
+
+    .skill-category:hover  {
         transform: translateY(-8px);
     }
 

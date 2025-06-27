@@ -25,4 +25,19 @@ jQuery(document).ready(function () {
             toggleHandler(this);
         });
     }
+
+    // ✅ Auto-close menu when a nav link is clicked
+    jQuery('.menu a').on('click', function () {
+        jQuery('#menu').removeClass('toggle-target-expanded').addClass('toggle-target-hidden');
+    });
+
+    // ✅ Auto-close menu when clicking outside the menu
+    jQuery(document).on('click touchstart', function (e) {
+        const menu = jQuery('#menu');
+        const toggle = jQuery('.toggle-btn');
+        if (!menu.is(e.target) && menu.has(e.target).length === 0 &&
+            !toggle.is(e.target) && toggle.has(e.target).length === 0) {
+            menu.removeClass('toggle-target-expanded').addClass('toggle-target-hidden');
+        }
+    });    
 });
