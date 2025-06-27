@@ -30,6 +30,15 @@ nav{
     z-index: 1;
 }
 
+/*Toggle section*/
+
+.toggle-btn {
+    display: none;
+}
+.toggle-btn img{
+    width: 25%;
+}
+
 nav ul{
     display: flex;
     list-style: none;
@@ -78,8 +87,8 @@ nav ul li a:hover{
     min-height: 600px;
     background-image: url('image/background-image.jpg');
     background-repeat: no-repeat;
-    background-size: 525px;
-    background-position: top left;
+    background-size: 500px;
+    background-position: bottom left;
     display: flex;
     align-items: center;
     justify-content:flex-end; /* send text to right */
@@ -356,6 +365,7 @@ nav ul li a:hover{
 
 /* Internship section End */
 
+
 /* Skill Section start */
 
 #skills-section {
@@ -551,7 +561,7 @@ input, textarea{
 }
 
 #contact-section form input, #contact-section form textarea{
-    width: 100%; /*500px*/
+    width: 100%; 
     height: 35px;
     margin: 5px 0px;
     padding: 10px;
@@ -633,13 +643,77 @@ input:focus, textarea:focus {
 
 /*Contact Section End*/
 
-/* ✅ Responsive Fixes for Internship, Skills, Certificate */
 
-@media (max-width: 768px) {
+
+/* FULL MOBILE RESPONSIVE MEDIA QUERY FOR PORTFOLIO */
+
+@media screen and (max-width: 768px) {
+  /* Navigation Bar */
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .toggle-btn {
+        display: block;
+        cursor: pointer;
+    }
+
+    .toggle-btn img {
+        width: 35px;
+        height: auto;
+        margin: 12px;
+    }
+
+    .toggle-btn-visible {display: block;}
+    .toggle-target-hidden {display: none;}
+    .toggle-target-expanded {display: block;}
+    .toggle-btn{
+        text-align: right;
+    }
+
+    nav ul.menu {
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #2b1b12;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 20px;
+        gap: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+    }
+
+    nav ul.menu li {
+        width: 100%;
+    }
+
+    nav ul.menu li a {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    nav ul li a:hover{
+    box-shadow: 0 4px 8px rgba(126, 74, 53, 0.5);  /* soft cocoa shadow */
+    border-bottom: 2px solid #e0c097;  /* soft gold */
+    transition: all 0.3s ease;
+    text-shadow: 0 0 5px rgba(224, 192, 151, 0.6);  /* subtle gold glow */
+}
+
+    /* Hero Section */
     #hero-section {
         flex-direction: column;
-        align-items: flex-end;
+        align-items: flex-start;
+        background-size: 300px;
         padding: 40px 20px;
+    }
+
+    #hero-section-heading {
+        padding-right: 0;
     }
 
     #hero-section-heading h2 {
@@ -653,18 +727,80 @@ input:focus, textarea:focus {
     #hero-section-heading p {
         font-size: 16px;
     }
-    
+
+    .custom-btn:hover{
+    background-color:#eeeecc ;
+    transform: scale(1.03);
+    box-shadow: 12px 12px 16px rgba(160, 100, 60, 0.6);
+    transition: 0.3s ease;
+    }
+
+    /* About Section */
+    #about-section {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    #about-text h2 {
+        font-size: 36px;
+    }
+
+    #about-text h3 {
+        font-size: 22px;
+    }
+
+    #about-text p {
+        font-size: 16px;
+    }
+
+    /* Project Section */
+    #project-section {
+        padding: 40px 30px;
+    }
+
+    #project-heading h1 {
+        font-size: 28px;
+    }
+
+    #project-heading p {
+        font-size: 16px;
+    }
+
+    .project-box {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-box:hover {
+        transform: scale(1.03);
+        box-shadow: 12px 12px 16px rgba(160, 100, 60, 0.6);
+        transition: 0.3s ease;
+    }
+
+    .project-img {
+        height: 200px;
+    }
+
+    .project-details p {
+        font-size: 15px;
+    }
+
+    .project-button {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Internship, Skills, Certificate Sections */
     #internship-section,
     #skills-section,
     #certificate-section {
         padding: 40px 20px;
-        height: auto; /* Allow it to grow as needed */
     }
 
     .internship-grid,
     .skills-grid,
     .certificate-grid {
-        grid-template-columns: 1fr; /* Single column on small screens */
+        grid-template-columns: 1fr;
     }
 
     .internship-box,
@@ -673,15 +809,57 @@ input:focus, textarea:focus {
         padding: 20px;
     }
 
+    .internship-box,
+    .skill-category,
+    .certificate-box:hover {
+        transform: translateY(-8px);
+    }
+
+    #internship-heading h1,
     #skills-heading h1,
-    #certificate-heading h1,
-    #internship-heading h1 {
+    #certificate-heading h1 {
         font-size: 28px;
     }
 
+    #internship-heading p,
     #skills-heading p,
-    #certificate-heading p,
-    #internship-heading p {
+    #certificate-heading p {
         font-size: 16px;
+    }
+
+    /* Contact Section */
+    #contact-section {
+        padding: 40px 20px;
+    }
+
+    #contact-heading h1 {
+        font-size: 28px;
+    }
+
+    #contact-heading p {
+        font-size: 16px;
+    }
+
+    #contact-section form {
+        width: 100%;
+    }
+
+    #contact-section form input,
+    #contact-section form textarea {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    #contact-section form input[type="submit"] {
+        width: 100%;
+    }
+
+    .contact-social {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .contact-info {
+        font-size: 15px;
     }
 }
