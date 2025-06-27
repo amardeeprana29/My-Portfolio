@@ -96,6 +96,16 @@ nav ul li a:hover{
     box-sizing: border-box;
 }
 
+#hero-section-image {
+    display: none;
+}
+
+#hero-section-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+}
+
 #hero-section-heading{
     width: 100%;
     max-width: 900px;
@@ -698,22 +708,25 @@ input:focus, textarea:focus {
     }
 
     nav ul li a:hover{
-    box-shadow: 0 4px 8px rgba(126, 74, 53, 0.5);  /* soft cocoa shadow */
-    border-bottom: 2px solid #e0c097;  /* soft gold */
-    transition: all 0.3s ease;
-    text-shadow: 0 0 5px rgba(224, 192, 151, 0.6);  /* subtle gold glow */
-}
+        box-shadow: 0 4px 8px rgba(126, 74, 53, 0.5);  /* soft cocoa shadow */
+        border-bottom: 2px solid #e0c097;  /* soft gold */
+        transition: all 0.3s ease;
+        text-shadow: 0 0 5px rgba(224, 192, 151, 0.6);  /* subtle gold glow */
+    }
 
     /* Hero Section */
     #hero-section {
         flex-direction: column;
-        align-items: flex-start;
-        background-size: 300px;
-        padding: 40px 20px;
+        align-items: center;
+        background-size: 280px;
+        background-position: top center;
+        padding: 30px 20px;
     }
 
     #hero-section-heading {
         padding-right: 0;
+        margin-top: 240px; /* for text margin-top */
+        text-align: left;
     }
 
     #hero-section-heading h2 {
@@ -729,10 +742,10 @@ input:focus, textarea:focus {
     }
 
     .custom-btn:hover{
-    background-color:#eeeecc ;
-    transform: scale(1.03);
-    box-shadow: 12px 12px 16px rgba(160, 100, 60, 0.6);
-    transition: 0.3s ease;
+        background-color:#eeeecc ;
+        transform: scale(1.03);
+        box-shadow: 12px 12px 16px rgba(160, 100, 60, 0.6);
+        transition: 0.3s ease;
     }
 
     /* About Section */
@@ -755,7 +768,7 @@ input:focus, textarea:focus {
 
     /* Project Section */
     #project-section {
-        padding: 40px 30px;
+        padding: 40px 20px;
     }
 
     #project-heading h1 {
