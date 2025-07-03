@@ -907,6 +907,6 @@ input:focus, textarea:focus {
     #hero-section-heading {
         padding-right: 0;
         margin-top: 0;
-        text-align: left;
+        text-align:left;
     }
 }
