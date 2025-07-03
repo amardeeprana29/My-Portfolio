@@ -887,26 +887,39 @@ input:focus, textarea:focus {
 @media (hover: none) and (pointer: coarse) and (min-width: 769px) {
     #hero-section {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 40px 20px;
         background-image: none;
-        padding: 30px 20px;
     }
 
     #hero-section-image {
         display: block;
-        margin-bottom: 20px;
+        width: 100%;
         text-align: center;
+        margin-bottom: 20px;
     }
 
     #hero-section-image img {
         width: 90%;
-        max-width: 350px;
+        max-width: 500px;
         border-radius: 12px;
     }
 
     #hero-section-heading {
-        padding-right: 0;
-        margin-top: 0;
-        text-align:left;
+        padding: 0;
+        text-align: left;
+    }
+
+    #hero-section-heading h2 {
+        font-size: 48px;
+    }
+
+    #hero-section-heading h3 {
+        font-size: 24px;
+    }
+
+    #hero-section-heading p {
+        font-size: 16px;
     }
 }
