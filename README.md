@@ -1,4 +1,7 @@
 # 💼 Amardeep Rana - Portfolio Website
+## 👀 Visitor Count
+
+![Visitor Count](https://komarev.com/ghpvc/?username=Amardeeprana29&style=flat-square)
 
 This is my personal **portfolio website** built using HTML5, CSS3, and JavaScript. It showcases my projects, skills, internship experience, certifications, and contact information.
 
