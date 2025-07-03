@@ -882,6 +882,8 @@ input:focus, textarea:focus {
     }
 }
 
+/* Phone + desktop site media*/
+
 @media (hover: none) and (pointer: coarse) and (min-width: 769px) {
     #hero-section {
         flex-direction: column;
@@ -905,6 +907,6 @@ input:focus, textarea:focus {
     #hero-section-heading {
         padding-right: 0;
         margin-top: 0;
-        text-align: center;
+        text-align: left;
     }
 }
