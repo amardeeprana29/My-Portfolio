@@ -653,6 +653,37 @@ input:focus, textarea:focus {
 
 /*Contact Section End*/
 
+/* Footer Section Start */
+#footer-section {
+    width: 100%;
+    background-color: #2b1b12;
+    color: #f5f5dc;
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 16px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.back-to-top {
+    display: inline-block;
+    margin-top: 10px;
+    color: #e0c097;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.back-to-top:hover {
+    text-decoration: underline;
+    color: #fff2c4;
+}
+/* Footer Section End */
+
 
 /* FULL MOBILE RESPONSIVE MEDIA QUERY FOR PORTFOLIO */
 
